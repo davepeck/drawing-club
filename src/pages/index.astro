@@ -18,20 +18,39 @@
     <style>
       body {
         font-family: "Signika Negative", sans-serif;
-        background-color: #f0f0f0;
-        display: flex;
-        height: 100dvh;
-        justify-content: center;
-        align-items: center;
+        background-color: #fff;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
       }
       h1 {
         font-size: 3rem;
         line-height: 0;
         color: #333;
       }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        /* TEMPORARY */
+        margin-left: -3.5rem;
+      }
+
+      .gallery img {
+        max-height: 16rem;
+      }
     </style>
   </head>
   <body>
-    <h1>Drawing Club</h1>
+    <main>
+      <h1>Drawing Club</h1>
+      <div class="gallery">
+        <img src="/images/paintbrush.png" alt="paintbrush" />
+        <img src="/images/leaf.png" alt="leaf" />
+        <img src="/images/dont-destroy-trees.png" alt="no cutting down trees" />
+      </div>
+    </main>
   </body>
 </html>
